@@ -11,6 +11,6 @@
         public int Telefono { get; set; }
         public string Token { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        public DateTime FechaRegistro { get; set; }
+        public DateTime FechaRegistro { get; set; } = DateTime.Now;
     }
 }

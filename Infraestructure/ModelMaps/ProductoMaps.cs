@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestructure.ModelMaps
 {
-    public class ProductoMaps : IEntityTypeConfiguration<Productos>
+    public class ProductoMaps : IEntityTypeConfiguration<Producto>
     {
-        public void Configure(EntityTypeBuilder<Productos> builder)
+        public void Configure(EntityTypeBuilder<Producto> builder)
         {
-            builder.ToTable("PRODUTOS");
+            builder.ToTable("PRODUCTOS");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("ID");
             builder.Property(x => x.Nombre).HasColumnName("NOMBRE");
-            builder.Property(x => x.Descripcion).HasColumnName("DECRIPCION");
+            builder.Property(x => x.Descripcion).HasColumnName("DESCRIPCION");
             builder.Property(x => x.Precio).HasColumnName("PRECIO");
             builder.Property(x => x.Estado).HasColumnName("ESTADO");
             builder.Property(x => x.IdCategoria).HasColumnName("ID_CATEGORIA");

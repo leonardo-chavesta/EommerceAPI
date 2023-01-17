@@ -24,7 +24,7 @@ namespace Infraestructure.Context
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<Imagen> Imagenes { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<Productos> Productos { get; set; }
+        public DbSet<Producto> Productos { get; set; }
         public DbSet<Roles> Roles { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 
