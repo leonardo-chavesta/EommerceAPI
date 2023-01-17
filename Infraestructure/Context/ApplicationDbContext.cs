@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain;
+using Infraestructure.ModelMaps;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace Infraestructure.Context
@@ -18,14 +20,26 @@ namespace Infraestructure.Context
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DBConnection"));
         }
 
-        // public DbSet<Perfil> Perfiles { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Factura> Facturas { get; set; }
+        public DbSet<Imagen> Imagenes { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<Productos> Productos { get; set; }
+        public DbSet<Roles> Roles { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // modelBuilder.ApplyConfiguration(new PerfilMaps());*/
-
+            modelBuilder.ApplyConfiguration(new CategoriaMaps());
+            modelBuilder.ApplyConfiguration(new FacturaMaps());
+            modelBuilder.ApplyConfiguration(new ImagenMaps());
+            modelBuilder.ApplyConfiguration(new PedidoMaps());
+            modelBuilder.ApplyConfiguration(new ProductoMaps());
+            modelBuilder.ApplyConfiguration(new RoleMaps());
+            modelBuilder.ApplyConfiguration(new UsuarioMaps());
         }
 
     }
