@@ -1,31 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj": {}
+    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj": {
+    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj",
-        "packagesPath": "C:\\Users\\lchavesta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lchavesta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
