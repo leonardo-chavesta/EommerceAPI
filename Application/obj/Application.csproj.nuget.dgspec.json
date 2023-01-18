@@ -1,41 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Application\\Application.csproj": {}
+    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Application\\Application.csproj": {
+    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Application\\obj\\",
+        "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\lchavesta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lchavesta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Infraestructure\\Infraestructure.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Infraestructure\\Infraestructure.csproj"
+              "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Infraestructure\\Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Infraestructure\\Infraestructure.csproj"
               },
-              "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj"
+              "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj": {
+                "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj"
               }
             }
           }
@@ -79,28 +83,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj": {
+    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\lchavesta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lchavesta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -134,36 +142,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Infraestructure\\Infraestructure.csproj": {
+    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Infraestructure\\Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Infraestructure\\Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Infraestructure\\Infraestructure.csproj",
         "projectName": "Infraestructure",
-        "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Infraestructure\\Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Infraestructure\\Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\lchavesta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lchavesta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Domain\\Domain.csproj"
+              "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -207,28 +219,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj": {
+    "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj",
+        "projectUniqueName": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\Utils.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\Desarrollo\\Ecommerce\\EommerceAPI\\Utils\\obj\\",
+        "projectPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\lchavesta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Utils\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lchavesta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -262,7 +278,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
