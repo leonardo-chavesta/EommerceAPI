@@ -18,7 +18,7 @@ namespace Infraestructure.Repositories.Implementacions
         {
             var user = await _context.Usuarios.AsNoTracking().DefaultIfEmpty().FirstOrDefaultAsync(u => u.Correo.Equals(correo));
 
-            return user;
+            return user!;
         }
 
         public Task<Usuario?> Autentifica(Usuario admin)
