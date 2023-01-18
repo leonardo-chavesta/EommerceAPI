@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace Application.Dtos.Usuarios.Maps
 {
-    public class UsuarioFormProfile : Profile
+    public class TokenMaps : Profile
     {
-        public UsuarioFormProfile() 
+        public TokenMaps()
         {
-            CreateMap<Usuario, UsuarioFormDto>().ReverseMap();
+            CreateMap<TokenRequestDto, Usuario>();
         }
-
     }
 }

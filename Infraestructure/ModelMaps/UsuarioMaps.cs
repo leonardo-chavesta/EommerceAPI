@@ -21,7 +21,6 @@ namespace Infraestructure.ModelMaps
             builder.Property(x => x.Contrasenia).HasColumnName("CONTRASEÑA");
             builder.Property(x => x.Direccion).HasColumnName("DIRRECCION");
             builder.Property(x => x.Telefono).HasColumnName("TELEFONO");
-            builder.Property(x => x.Token).HasColumnName("TOKEN");
             builder.Property(x => x.FechaNacimiento).HasColumnName("FECHA_NACIMIENTO");
             builder.Property(x => x.FechaRegistro).HasColumnName("FECHA_REGISTRO");
             builder.Property(x => x.IdRoles).HasColumnName("ID_ROLES");

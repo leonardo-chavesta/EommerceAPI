@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Application.Dtos.Usuarios
 {
-    public class UsuarioFormLoginDto
+    public class TokenRequestDto
     {
-        public string Nombre { get; set; }
-        public string Correo { get; set; }
-        public string Contrasenia { get; set; }
+        public string? Correo { get; set; }
+        public string? Contrasenia { get; set; }
     }
 }

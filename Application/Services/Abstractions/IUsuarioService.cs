@@ -1,4 +1,5 @@
-﻿using Application.Dtos.Usuarios;
+﻿using Application.Base;
+using Application.Dtos.Usuarios;
 using Domain;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Application.Services.Abstractions
 {
     public interface IUsuarioService
     {
-        Task<UsuarioDto?> Autentifica(UsuarioFormLoginDto admin);
 
+        Task<BaseResponse<object>> GenerarToken(TokenRequestDto requestDto); 
     }
 }

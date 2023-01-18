@@ -164,3 +164,7 @@ C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\obj\Debug\
 C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.pdb
 C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.genruntimeconfig.cache
 C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\obj\Debug\net7.0\ref\EcommerceAPI.dll
+C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\BCrypt.Net-Core.dll
+C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
