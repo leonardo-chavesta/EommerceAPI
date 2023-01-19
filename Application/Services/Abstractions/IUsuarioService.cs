@@ -11,6 +11,7 @@ namespace Application.Services.Abstractions
 {
     public interface IUsuarioService
     {
-       Task<BaseResponse<object>> GenerarToken(TokenRequestDto requestDto); 
+       Task<BaseResponse<object>> GenerarToken(TokenRequestDto requestDto);
+        Task<BaseResponse<bool>> Register(UsuarioFormDto requestDto);
     }
 }

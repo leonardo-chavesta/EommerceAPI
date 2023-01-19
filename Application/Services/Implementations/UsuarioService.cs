@@ -3,6 +3,7 @@ using Application.Dtos.Usuarios;
 using Application.Services.Abstractions;
 using AutoMapper;
 using Domain;
+using FluentValidation;
 using Infraestructure.Repositories.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -81,6 +82,35 @@ namespace Application.Services.Implementations
             return response;
         }
 
-        
+        public async Task<BaseResponse<bool>> Register(UsuarioFormDto requestDto)
+        {
+            var response = new BaseResponse<bool>();
+            var account = _mapper.Map<Usuario>(requestDto);
+            account.Contrasenia = BC.HashPassword(requestDto.Contrasenia);
+
+            var correo = await _usuarioRepository.UserByCorreo(account.Correo);
+
+            if (correo != null)
+            {
+                response.IsSuccess = false;
+                response.Message = Message.MESSAGE_CORREO;
+                //response.Errors = validationResult.Errors;
+                return response;
+            }
+
+            response.Data = await _usuarioRepository.Register(account);
+
+            if (response.Data)
+            {
+                response.IsSuccess = true;
+                response.Message = Message.MESSAGE_SAVE;
+            }
+            else
+            {
+                response.IsSuccess = false;
+                response.Message = Message.MESSAGE_FAILED;
+            }
+            return response;
+        }
     }
 }

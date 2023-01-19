@@ -23,5 +23,11 @@ namespace EcommerceAPI.Controllers
             return response.IsSuccess ? Ok(response) : BadRequest(response);
 
         }
+        [HttpPost("Register")]
+        public async Task<IActionResult> RegisterUser([FromBody] UsuarioFormDto requestDto)
+        {
+            var response = await _usuarioService.Register(requestDto);
+            return Ok(response);
+        }
     }
 }

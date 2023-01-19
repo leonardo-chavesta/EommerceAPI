@@ -9,7 +9,7 @@
         public string Contrasenia { get; set; }
         public string? Direccion { get; set; }
         public int Telefono { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public DateTime FechaNacimiento { get; set; } = DateTime.Now;
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
     }
 }
