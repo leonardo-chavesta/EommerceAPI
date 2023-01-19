@@ -15,8 +15,10 @@ namespace Infraestructure.ModelMaps
             builder.Property(x => x.Descripcion).HasColumnName("DESCRIPCION");
             builder.Property(x => x.Precio).HasColumnName("PRECIO");
             builder.Property(x => x.Estado).HasColumnName("ESTADO");
-            builder.Property(x => x.IdCategoria).HasColumnName("ID_CATEGORIA");
+            builder.Property(x => x.CategoriaId).HasColumnName("ID_CATEGORIA");
             builder.Property(x => x.FechaRegistro).HasColumnName("FECHA_REGISTRO");
+
+            builder.HasOne(t => t.Categoria).WithMany(t => t.Productos).HasForeignKey(t => t.CategoriaId);
         }
     }
 }

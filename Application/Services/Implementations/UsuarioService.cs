@@ -65,15 +65,12 @@ namespace Application.Services.Implementations
                     response.Data = GenerateToken(account);
                     response.Message = Message.MESSAGE_TOKEN;
                     return response;
-
                 }
                 else
                 {
-
                     response.IsSuccess = true;
                     response.Message = Message.MESSAGE_TOKEN_ERROR;
                 }
-
             }
             else
             {

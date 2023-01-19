@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utils.Static;
 
 namespace Application.Services.Implementations
 {
@@ -57,6 +58,12 @@ namespace Application.Services.Implementations
             var response = await _productoRepository.ListaProductos();
 
             return _mapper.Map<IList<ProductoDto>>(response);
+        }
+
+        public async Task<IList<ProductoDto>> ListarProductoAsync(PeticionFiltroDto<ProductoPeticionDto> peticion)
+        {
+            var entidad = await _productoRepository.ListarProductoAsync(peticion.Filtro.Nombre, peticion.Filtro.Categoria);
+            return _mapper.Map<IList<ProductoDto>>(entidad);
         }
     }
 }
