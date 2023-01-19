@@ -7,5 +7,6 @@ namespace Infraestructure.Repositories.Abstractions
         Task<Usuario?> Autentifica(Usuario admin);
         Task<bool>Register(Usuario admin);
         Task<Usuario> AcountCorreo(string correo);
+        Task<Usuario> UserByCorreo(string email);
     }
 }

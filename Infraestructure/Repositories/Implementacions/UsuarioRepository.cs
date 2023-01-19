@@ -32,5 +32,14 @@ namespace Infraestructure.Repositories.Implementacions
             var recordsAffected = await _context.SaveChangesAsync();
             return recordsAffected > 0;
         }
+
+        public async Task<Usuario> UserByCorreo(string email)
+        {
+            var user = await _context.Usuarios
+                .AsNoTracking()
+                .DefaultIfEmpty()
+                .FirstOrDefaultAsync(u => u.Correo.Equals(email));
+            return user;
+        }
     }
 }

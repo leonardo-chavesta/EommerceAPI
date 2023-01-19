@@ -1,5 +1,6 @@
 ﻿using Application.Dtos.Productos;
 using Application.Services.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,7 @@ using Utils.Static;
 
 namespace EcommerceAPI.Controllers
 {
+    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductoController : Controller
