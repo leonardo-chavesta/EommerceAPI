@@ -98,6 +98,7 @@ C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\D
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\BCrypt.Net-Core.dll
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -171,4 +172,3 @@ C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\D
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.pdb
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.genruntimeconfig.cache
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\ref\EcommerceAPI.dll
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\BCrypt.Net-Core.dll
