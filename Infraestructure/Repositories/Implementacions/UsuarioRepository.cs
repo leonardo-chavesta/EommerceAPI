@@ -25,5 +25,12 @@ namespace Infraestructure.Repositories.Implementacions
         {
             throw new NotImplementedException();
         }
+
+        public async Task<bool> Register(Usuario admin)
+        {
+            await _context.AddAsync(admin);
+            var recordsAffected = await _context.SaveChangesAsync();
+            return recordsAffected > 0;
+        }
     }
 }
