@@ -24,6 +24,12 @@ namespace Infraestructure.ModelMaps
             builder.Property(x => x.FechaNacimiento).HasColumnName("FECHA_NACIMIENTO");
             builder.Property(x => x.FechaRegistro).HasColumnName("FECHA_REGISTRO");
             builder.Property(x => x.IdRoles).HasColumnName("ID_ROLES");
+
+            builder.HasOne(t => t.Rol).WithMany(t => t.Usuarios).HasForeignKey(t => t.IdRoles);
+
+
+
+
         }
     }
 }

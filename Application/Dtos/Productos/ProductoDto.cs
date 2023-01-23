@@ -1,4 +1,5 @@
 ﻿using Application.Dtos.Categorias;
+using Application.Dtos.Usuarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace Application.Dtos.Productos
     {
         public int Id { get; set; }
         public int CategoriaId { get; set; }
+        public int UsuarioId { get; set; }
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }
         public decimal Precio { get; set; }

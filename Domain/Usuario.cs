@@ -11,5 +11,11 @@
         public int Telefono { get; set; }
         public DateTime FechaNacimiento { get; set; } = DateTime.Now;
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
+
+        public virtual Rol Rol { get; set; }
+        public virtual IList<Producto> Productos { get; set; }
+
+        public virtual IList<Carrito> Carritos { get; set; }
+
     }
 }

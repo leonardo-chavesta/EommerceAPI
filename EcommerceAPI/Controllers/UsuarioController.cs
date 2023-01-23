@@ -1,5 +1,7 @@
-﻿using Application.Dtos.Usuarios;
+﻿using Application.Dtos.Productos;
+using Application.Dtos.Usuarios;
 using Application.Services.Abstractions;
+using Application.Services.Implementations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,5 +31,8 @@ namespace EcommerceAPI.Controllers
             var response = await _usuarioService.Register(requestDto);
             return Ok(response);
         }
+        [HttpGet("ListarUsurario")]
+        public async Task<IEnumerable<UsuarioDto>> Get()
+           => await _usuarioService.ListaUsuarios();
     }
 }

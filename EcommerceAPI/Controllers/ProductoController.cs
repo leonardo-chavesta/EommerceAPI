@@ -19,7 +19,7 @@ namespace EcommerceAPI.Controllers
         {
             _productoService = productoService;
         }
-        [HttpGet]
+        [HttpGet("ListarProducto")]
         public async Task<IEnumerable<ProductoDto>> Get()
             => await _productoService.ListaProductos();
 

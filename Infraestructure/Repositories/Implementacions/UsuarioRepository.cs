@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using Azure;
+using Domain;
 using Infraestructure.Context;
 using Infraestructure.Repositories.Abstractions;
 using Microsoft.EntityFrameworkCore;
@@ -17,14 +18,10 @@ namespace Infraestructure.Repositories.Implementacions
         public async Task<Usuario> AcountCorreo(string correo)
         {
             var user = await _context.Usuarios.AsNoTracking().DefaultIfEmpty().FirstOrDefaultAsync(u => u.Correo.Equals(correo));
-
             return user!;
         }
-
-        public Task<Usuario?> Autentifica(Usuario admin)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<IList<Usuario>> ListaUsuarios()
+            => await _context.Usuarios.Include(x => x.Rol).Include(x => x.Productos).OrderByDescending(e => e.Id).ToListAsync();
 
         public async Task<bool> Register(Usuario admin)
         {

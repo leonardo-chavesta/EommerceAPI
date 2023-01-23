@@ -1,4 +1,5 @@
 ﻿using Application.Base;
+using Application.Dtos.Productos;
 using Application.Dtos.Usuarios;
 using Application.Services.Abstractions;
 using AutoMapper;
@@ -57,27 +58,30 @@ namespace Application.Services.Implementations
         {
             var response = new BaseResponse<object> ();
             var account = await _usuarioRepository.AcountCorreo(requestDto.Correo!);
+            bool success = false;
             
             if (account is not null)
             {
                 if (BC.Verify(requestDto.Contrasenia, account.Contrasenia))
                 {
-                    response.IsSuccess = true;
-                    response.Data = GenerateToken(account);
+                    success = true;
+                    response.IsSuccess = success;
+                    response.Data = account;
                     response.Message = Message.MESSAGE_TOKEN;
                     return response;
                 }
                 else
                 {
-                    response.IsSuccess = true;
+                    response.IsSuccess = success;
                     response.Message = Message.MESSAGE_TOKEN_ERROR;
+                    return response;
                 }
             }
             else
             {
-
-                response.IsSuccess = true;
+                response.IsSuccess = success;
                 response.Message = Message.MESSAGE_TOKEN_ERROR;
+                return response;
             }
             return response;
         }
@@ -94,7 +98,6 @@ namespace Application.Services.Implementations
             {
                 response.IsSuccess = false;
                 response.Message = Message.MESSAGE_CORREO;
-                //response.Errors = validationResult.Errors;
                 return response;
             }
 
@@ -111,6 +114,16 @@ namespace Application.Services.Implementations
                 response.Message = Message.MESSAGE_FAILED;
             }
             return response;
+        }
+
+      
+
+        public async Task<IList<UsuarioDto>> ListaUsuarios()
+        {
+           var response = await _usuarioRepository.ListaUsuarios();
+
+            return _mapper.Map<IList<UsuarioDto>>(response);
+
         }
     }
 }

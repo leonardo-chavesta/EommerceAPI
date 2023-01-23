@@ -26,7 +26,7 @@ namespace Infraestructure.Repositories.Implementacions
                 model.Descripcion= entity.Descripcion;
                 model.Flag= entity.Flag;
                 model.Precio= entity.Precio;
-                model.CategoriaId= entity.CategoriaId;
+                model.IdCategoria = entity.IdCategoria;
 
                 _context.Productos.Update(model);
                 await _context.SaveChangesAsync();
@@ -57,7 +57,7 @@ namespace Infraestructure.Repositories.Implementacions
         }
 
         public async Task<IList<Producto>> ListaProductos()
-            => await _context.Productos.Where(x => x.Estado == 1).OrderByDescending(e => e.Id).ToListAsync();
+            => await _context.Productos.Include(x => x.Categoria).Where(x => x.Estado == 1).OrderByDescending(e => e.Id).ToListAsync();
 
         public async Task<IList<Producto>> ListarProductoAsync(string nombre, string categoria)
         {
