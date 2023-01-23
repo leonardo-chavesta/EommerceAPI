@@ -9,7 +9,7 @@ namespace Domain
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
         public int Estado { get; set; } = 1;
 
-        public virtual Producto? Producto { get; set; }
+        public virtual Productos? Producto { get; set; }
         public virtual Usuario? Usuario { get; set; }   
 
 

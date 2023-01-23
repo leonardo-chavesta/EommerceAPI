@@ -18,17 +18,17 @@ namespace EcommerceAPI.Controllers
             _usuarioService = usuarioService;
         }
 
-        [HttpPost("Autentica")]
-        public async Task<Results<NotFound, Ok<UsuarioDto>>> Post([FromBody] UsuarioFormLoginDto admin)
-        {
-            var adm = await _usuarioService.Autentifica(admin);
-            if (adm == null)
-            {
-                return TypedResults.NotFound();
-            }
+        //[HttpPost("Autentica")]
+        //public async Task<Results<NotFound, Ok<UsuarioDto>>> Post([FromBody] UsuarioFormLoginDto admin)
+        //{
+        //    var adm = await _usuarioService.Autentifica(admin);
+        //    if (adm == null)
+        //    {
+        //        return TypedResults.NotFound();
+        //    }
 
 
-            return TypedResults.Ok(adm);
-        }
+        //    return TypedResults.Ok(adm);
+        //}
     }
 }
