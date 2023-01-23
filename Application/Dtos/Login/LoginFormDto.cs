@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Dtos.Usuarios
+namespace Application.Dtos.Login
 {
-    public class UsuarioFormLoginDto
+    public class LoginFormDto
     {
         public string Nombre { get; set; }
         public string Correo { get; set; }

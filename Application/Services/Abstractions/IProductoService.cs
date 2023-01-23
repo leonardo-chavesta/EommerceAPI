@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utils.Static;
 
 namespace Application.Services.Abstractions
 {
@@ -14,5 +15,6 @@ namespace Application.Services.Abstractions
         Task<ProductoDto?> EditProducto(int id, ProductoFormDto entity);
         Task<ProductoDto> GenerarProducto(ProductoFormDto entity);
         Task<ProductoDto?> EliminarProducto(int id);
+        Task<IList<ProductoDto>> ListarProductoAsync(PeticionFiltroDto<ProductoPeticionDto> peticion);
     }
 }

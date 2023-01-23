@@ -1,14 +1,19 @@
-
-using Autofac.Extensions.DependencyInjection;
 using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Infraestructure.Context;
 using System.Reflection;
 
-string _MyCors = "MyCors";
 
 var builder = WebApplication.CreateBuilder(args);
-
+string _MyCors = "MyCors";
 // Add services to the container.
+builder.Services.Configure<RouteOptions>(options =>
+{
+    options.LowercaseUrls = true;
+    options.LowercaseQueryStrings = true;
+});
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -16,6 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>();
+
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
     .ConfigureContainer<ContainerBuilder>(options =>
@@ -35,7 +41,7 @@ builder.Services.AddCors(options => {
     {
         options.AddPolicy(name: _MyCors, builder =>
         {
-            builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
+            builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost" )
             .AllowAnyHeader()
             .AllowAnyMethod();
         });

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Dtos.Productos;
+using Application.Dtos.Roles;
 
 namespace Application.Dtos.Usuarios
 {
@@ -18,5 +15,7 @@ namespace Application.Dtos.Usuarios
         public string Token { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
+        public RolDto Rol { get; set; }
+        public  IList<ProductoDto> Productos { get; set; }
     }
 }

@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestructure.ModelMaps
 {
-    public class RoleMaps : IEntityTypeConfiguration<Roles>
+    public class RolMaps : IEntityTypeConfiguration<Rol>
     {
-        public void Configure(EntityTypeBuilder<Roles> builder)
+        public void Configure(EntityTypeBuilder<Rol> builder)
         {
             builder.ToTable("ROLES");
             builder.HasKey(x => x.Id);

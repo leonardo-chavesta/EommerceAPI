@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "syomDizu0gQhJidvglQzZyO6mylTuvYXe6aqcv7BX0mapSl0FKnwAzSHOYC/aliHjAWhpGZ8x/Seg81iGvu68A==",
+  "dgSpecHash": "SBhNQpInej9JDaIQ0AiN8wcFEv9CYZx8Raf/o4r66vSbd5M3VjI/Wme/SAU6+KBbJ5lpnEUkZeZdcTVYXYRWzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lchavesta\\OneDrive\\Escritorio\\Ecommerce\\EcommerceAPI\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lchavesta\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\lchavesta\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lchavesta\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\lchavesta\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\lchavesta\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\lchavesta\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\lchavesta\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\lchavesta\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lchavesta\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\lchavesta\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

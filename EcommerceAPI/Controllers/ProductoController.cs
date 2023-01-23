@@ -1,11 +1,14 @@
 ﻿using Application.Dtos.Productos;
 using Application.Services.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Utils.Static;
 
 namespace EcommerceAPI.Controllers
 {
+    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductoController : Controller
@@ -16,7 +19,7 @@ namespace EcommerceAPI.Controllers
         {
             _productoService = productoService;
         }
-        [HttpGet]
+        [HttpGet("ListarProducto")]
         public async Task<IEnumerable<ProductoDto>> Get()
             => await _productoService.ListaProductos();
 
@@ -60,7 +63,12 @@ namespace EcommerceAPI.Controllers
 
             return TypedResults.Ok(response);
         }
-         
-         
+        [HttpPost("ListarProductoAsync/Filtro")]
+        public async Task<IList<ProductoDto>> ListarProductoAsync(PeticionFiltroDto<ProductoPeticionDto> peticion)
+        {
+            var operacion = await _productoService.ListarProductoAsync(peticion);
+            return operacion;
+        }
+
     }
 }

@@ -25,8 +25,9 @@ namespace Infraestructure.Context
         public DbSet<Imagen> Imagenes { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Producto> Productos { get; set; }
-        public DbSet<Roles> Roles { get; set; }
+        public DbSet<Rol> Roles { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Carrito> Carritos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,8 +39,10 @@ namespace Infraestructure.Context
             modelBuilder.ApplyConfiguration(new ImagenMaps());
             modelBuilder.ApplyConfiguration(new PedidoMaps());
             modelBuilder.ApplyConfiguration(new ProductoMaps());
-            modelBuilder.ApplyConfiguration(new RoleMaps());
+            modelBuilder.ApplyConfiguration(new RolMaps());
             modelBuilder.ApplyConfiguration(new UsuarioMaps());
+            modelBuilder.ApplyConfiguration(new CarritoMaps());
+
         }
 
     }
