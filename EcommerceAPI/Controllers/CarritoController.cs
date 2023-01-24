@@ -31,6 +31,14 @@ namespace EcommerceAPI.Controllers
             return TypedResults.Ok(response);
         }
 
+        [HttpDelete("EliminarDelCarrito/{id}")]
+        public async Task<Results<NotFound, Ok<CarritoDto>>> Delete(int id)
+        {
+            var response = await _carritoService.EliminarProductoDelCarrito(id);
+            if(response == null) TypedResults.NotFound();
+
+            return TypedResults.Ok(response);
+        }
 
 
     }

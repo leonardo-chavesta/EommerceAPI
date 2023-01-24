@@ -1,10 +1,8 @@
 ﻿using Application.Base;
-using Application.Dtos.Productos;
 using Application.Dtos.Usuarios;
 using Application.Services.Abstractions;
 using AutoMapper;
 using Domain;
-using FluentValidation;
 using Infraestructure.Repositories.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -83,7 +81,6 @@ namespace Application.Services.Implementations
                 response.Message = Message.MESSAGE_TOKEN_ERROR;
                 return response;
             }
-            return response;
         }
 
         public async Task<BaseResponse<bool>> Register(UsuarioFormDto requestDto)
@@ -115,9 +112,6 @@ namespace Application.Services.Implementations
             }
             return response;
         }
-
-      
-
         public async Task<IList<UsuarioDto>> ListaUsuarios()
         {
            var response = await _usuarioRepository.ListaUsuarios();

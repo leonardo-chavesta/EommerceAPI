@@ -14,8 +14,5 @@
 
         public virtual Rol Rol { get; set; }
         public virtual IList<Producto> Productos { get; set; }
-
-        public virtual IList<Carrito> Carritos { get; set; }
-
     }
 }

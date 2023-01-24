@@ -51,6 +51,7 @@ namespace EcommerceAPI.Controllers
         {
             var response = await _productoService.GenerarProducto(request);
             if (response == null) return TypedResults.BadRequest();
+
             return TypedResults.Ok(response);
         }
         [HttpDelete("EliminarProducto/{id}")]

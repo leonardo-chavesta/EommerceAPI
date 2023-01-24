@@ -3,11 +3,6 @@ using Application.Services.Abstractions;
 using AutoMapper;
 using Domain;
 using Infraestructure.Repositories.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services.Implementations
 {

@@ -6,12 +6,7 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 string _MyCors = "MyCors";
-// Add services to the container.
-builder.Services.Configure<RouteOptions>(options =>
-{
-    options.LowercaseUrls = true;
-    options.LowercaseQueryStrings = true;
-});
+
 
 
 

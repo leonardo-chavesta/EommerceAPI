@@ -11,15 +11,11 @@ namespace Infraestructure.ModelMaps
             builder.ToTable("CARRITO");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("ID");
-            builder.Property(x => x.ProductoId).HasColumnName("ID_PRODUCTO");
-            builder.Property(x => x.UsuarioId).HasColumnName("ID_USUARIO");
+            builder.Property(x => x.Nombre).HasColumnName("NOMBRE");
+            builder.Property(x => x.Descripcion).HasColumnName("DESCRIPCION");
+            builder.Property(x => x.Precio).HasColumnName("PRECIO");
             builder.Property(x => x.FechaRegistro).HasColumnName("FECHA_REGISTRO");
             builder.Property(x => x.Estado).HasColumnName("ESTADO");
-
-            builder.HasOne(x => x.Usuario).WithMany(x => x.Carritos).HasForeignKey(x => x.UsuarioId);
-            builder.HasOne(x => x.Producto).WithMany(x => x.Carritos).HasForeignKey(x => x.ProductoId);
-
-
         }
     }
 }

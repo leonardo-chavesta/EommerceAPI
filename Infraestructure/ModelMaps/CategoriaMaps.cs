@@ -10,6 +10,7 @@ namespace Infraestructure.ModelMaps
         {
             builder.ToTable("CATEGORIA");
             builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).HasColumnName("ID");
             builder.Property(x=> x.Descripcion).HasColumnName("DESCRIPCION");
         }
     }

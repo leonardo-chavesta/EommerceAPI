@@ -85,12 +85,6 @@ C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\
 C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Users\User\Documents\Desarrollo\Ecommerce\EommerceAPI\EcommerceAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.csproj.AssemblyReference.cache
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.AssemblyInfoInputs.cache
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.AssemblyInfo.cs
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.csproj.CoreCompileInputs.cache
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\appsettings.json
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\EcommerceAPI.exe
@@ -157,6 +151,13 @@ C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\D
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\Infraestructure.pdb
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\Utils.pdb
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\bin\Debug\net7.0\Domain.pdb
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.csproj.AssemblyReference.cache
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.AssemblyInfoInputs.cache
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.AssemblyInfo.cs
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.csproj.CoreCompileInputs.cache
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\staticwebassets\msbuild.EcommerceAPI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.EcommerceAPI.props
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.EcommerceAPI.props
@@ -171,4 +172,3 @@ C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\D
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.pdb
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.genruntimeconfig.cache
 C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\ref\EcommerceAPI.dll
-C:\Users\lchavesta\OneDrive\Escritorio\Ecommerce\EcommerceAPI\EcommerceAPI\obj\Debug\net7.0\EcommerceAPI.MvcApplicationPartsAssemblyInfo.cs
