@@ -9,5 +9,6 @@ namespace Infraestructure.Repositories.Abstractions
         Task<Producto?> EditProducto(int id, Producto entity);
         Task<Producto?> EliminarProducto(int id);
         Task<IList<Producto>> ListarProductoAsync(string nombre, string categoria);
+        Task<IList<Producto?>> BuscarProductoXUsuario(int idUsuario);
     }
 }

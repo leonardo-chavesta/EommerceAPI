@@ -20,6 +20,10 @@ namespace Infraestructure.Repositories.Implementacions
             var user = await _context.Usuarios.AsNoTracking().DefaultIfEmpty().FirstOrDefaultAsync(u => u.Correo.Equals(correo));
             return user!;
         }
+
+        public async Task<Usuario?> BuscarUsuario(int id)
+         => await _context.Usuarios.FindAsync(id);
+
         public async Task<IList<Usuario>> ListaUsuarios()
             => await _context.Usuarios.Include(x => x.Rol).Include(x => x.Productos).OrderByDescending(e => e.Id).ToListAsync();
 

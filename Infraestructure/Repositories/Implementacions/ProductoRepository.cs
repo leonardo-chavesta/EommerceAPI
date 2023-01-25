@@ -17,6 +17,16 @@ namespace Infraestructure.Repositories.Implementacions
         public async Task<Producto?> BuscarProducto(int id)
             => await _context.Productos.FindAsync(id);
 
+        public async Task<IList<Producto?>> BuscarProductoXUsuario(int idUsuario)
+        {
+            var response =  await _context.Productos
+                .Include(x => x.Categoria)
+                .Include(x => x.Usuario).
+                Where(x => x.Estado == 1 && x.IdUsuario == idUsuario)
+                .OrderByDescending(e => e.Id).ToListAsync();
+            return response!;
+        }
+
         public async Task<Producto?> EditProducto(int id, Producto entity)
         {
             var model = await _context.Productos.FindAsync(id);

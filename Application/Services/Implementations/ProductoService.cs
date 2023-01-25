@@ -25,6 +25,12 @@ namespace Application.Services.Implementations
 
         }
 
+        public async Task<IList<ProductoDto>> BuscarProductoXUsuario(int idUsuario)
+        {
+            var response = await _productoRepository.BuscarProductoXUsuario(idUsuario);
+            return _mapper.Map<IList<ProductoDto>>(response);
+        }
+
         public async Task<ProductoDto?> EditProducto(int id, ProductoFormDto entity)
         {
             var dto = _mapper.Map<Producto>(entity);

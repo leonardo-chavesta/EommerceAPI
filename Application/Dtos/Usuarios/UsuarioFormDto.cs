@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.Dtos.Usuarios
+﻿namespace Application.Dtos.Usuarios
 {
     public class UsuarioFormDto
     {
@@ -12,5 +6,8 @@ namespace Application.Dtos.Usuarios
         public string Nombre { get; set; }
         public string Correo { get; set; }
         public string Contrasenia { get; set; }
+        public string Direccion { get; set; }
+        public int Telefono { get; set; }
+        public DateTime FechaNacimiento { get; set; }
     }
 }

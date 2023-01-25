@@ -24,7 +24,7 @@ namespace EcommerceAPI.Controllers
             => await _productoService.ListaProductos();
 
         [HttpGet("ObtenerProducto/{id}")]
-        public async Task<Results<NotFound, Ok<ProductoDto>>>Get(int id)
+        public async Task<Results<NotFound, Ok<ProductoDto>>> Get(int id)
         {
             var response = await _productoService.BuscarProducto(id);
             if (response == null) return TypedResults.NotFound();
@@ -70,6 +70,10 @@ namespace EcommerceAPI.Controllers
             var operacion = await _productoService.ListarProductoAsync(peticion);
             return operacion;
         }
+
+        [HttpGet("BuscarProductoXIdUsuario/{idUsuario}")]
+        public async Task<IEnumerable<ProductoDto>> BuscarProductoXIdUsuario(int idUsuario)
+            => await _productoService.BuscarProductoXUsuario(idUsuario);
 
     }
 }

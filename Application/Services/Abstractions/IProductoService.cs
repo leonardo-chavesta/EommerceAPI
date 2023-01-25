@@ -10,6 +10,9 @@ namespace Application.Services.Abstractions
         Task<ProductoDto?> EditProducto(int id, ProductoFormDto entity);
         Task<ProductoDto> GenerarProducto(ProductoFormDto entity);
         Task<ProductoDto?> EliminarProducto(int id);
+
+        Task<IList<ProductoDto>> BuscarProductoXUsuario(int idUsuario);
+
         Task<IList<ProductoDto>> ListarProductoAsync(PeticionFiltroDto<ProductoPeticionDto> peticion);
     }
 }

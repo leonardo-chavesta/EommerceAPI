@@ -3,6 +3,7 @@ using Application.Dtos.Usuarios;
 using Application.Services.Abstractions;
 using Application.Services.Implementations;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceAPI.Controllers
@@ -34,5 +35,15 @@ namespace EcommerceAPI.Controllers
         [HttpGet("ListarUsurario")]
         public async Task<IEnumerable<UsuarioDto>> Get()
            => await _usuarioService.ListaUsuarios();
+
+        [HttpGet("ObtenerUsuario/{id}")]
+        public async Task<Results<NotFound, Ok<UsuarioDto>>>Get(int id)
+        {
+            var response = await _usuarioService.BuscarUsuario(id);
+            if (response == null) return TypedResults.NotFound();
+
+            return TypedResults.Ok(response);
+        }
+         
     }
 }

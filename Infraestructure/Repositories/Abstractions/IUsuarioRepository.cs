@@ -9,5 +9,6 @@ namespace Infraestructure.Repositories.Abstractions
         Task<Usuario> AcountCorreo(string correo);
         Task<Usuario> UserByCorreo(string email);
         Task<IList<Usuario>> ListaUsuarios();
+        Task<Usuario?> BuscarUsuario(int id);
     }
 }

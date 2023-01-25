@@ -8,5 +8,7 @@ namespace Application.Services.Abstractions
         Task<IList<UsuarioDto>> ListaUsuarios();
         Task<BaseResponse<object>> GenerarToken(TokenRequestDto requestDto);
         Task<BaseResponse<bool>> Register(UsuarioFormDto requestDto);
+        Task<UsuarioDto?> BuscarUsuario(int id);
+
     }
 }

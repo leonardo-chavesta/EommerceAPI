@@ -87,10 +87,15 @@ namespace Application.Services.Implementations
         {
             var response = new BaseResponse<bool>();
             var account = _mapper.Map<Usuario>(requestDto);
-            account.Contrasenia = BC.HashPassword(requestDto.Contrasenia);
-
             var correo = await _usuarioRepository.UserByCorreo(account.Correo);
-
+            account.Contrasenia = BC.HashPassword(requestDto.Contrasenia);
+            
+            if(account.Correo == "" || account.Contrasenia == "" || account.Nombre == "")
+            {
+                response.IsSuccess = false;
+                response.Message= Message.MESSAGE_REGISTER;
+                return response;
+            }
             if (correo != null)
             {
                 response.IsSuccess = false;
@@ -118,6 +123,12 @@ namespace Application.Services.Implementations
 
             return _mapper.Map<IList<UsuarioDto>>(response);
 
+        }
+
+        public async Task<UsuarioDto?> BuscarUsuario(int id)
+        {
+             var response = await _usuarioRepository.BuscarUsuario(id);
+             return _mapper.Map<UsuarioDto?>(response);
         }
     }
 }

@@ -12,7 +12,6 @@ namespace Application.Dtos.Usuarios
         public string Contrasenia { get; set; }
         public string? Direccion { get; set; }
         public int Telefono { get; set; }
-        public string Token { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
         public RolDto Rol { get; set; }

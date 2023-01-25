@@ -26,5 +26,6 @@ namespace Utils.Static
         public const string MESSAGE_ESTATE = "Se actualizo correctamente el estado.";
         public const string MESSAGE_CORREO = "Correo ya existente.";
         public const string MESSAGE_IMAGEN = "Falta comprobante de pago.";
+        public const string MESSAGE_REGISTER = "Falta Ingresar Datos";
     }
 }
