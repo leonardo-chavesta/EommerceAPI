@@ -1,5 +1,7 @@
 ﻿using Application.Dtos.Carritos;
+using Application.Dtos.Productos;
 using Application.Services.Abstractions;
+using Application.Services.Implementations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -39,6 +41,10 @@ namespace EcommerceAPI.Controllers
 
             return TypedResults.Ok(response);
         }
+
+        [HttpGet("BuscarComprasXUsuario/{idUsuario}")]
+        public async Task<IEnumerable<CarritoDto>> BuscarComprasXUsuario(int idUsuario)
+           => await _carritoService.BuscarComprasXUsuario(idUsuario);
 
 
     }

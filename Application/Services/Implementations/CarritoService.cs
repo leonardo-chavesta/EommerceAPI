@@ -1,8 +1,10 @@
 ﻿using Application.Dtos.Carritos;
+using Application.Dtos.Productos;
 using Application.Services.Abstractions;
 using AutoMapper;
 using Domain;
 using Infraestructure.Repositories.Abstractions;
+using Infraestructure.Repositories.Implementacions;
 
 namespace Application.Services.Implementations
 {
@@ -21,6 +23,12 @@ namespace Application.Services.Implementations
         {
             var response = await _carritoRepository.BucarProductosCarrito(id);
             return _mapper.Map<CarritoDto?>(response);
+        }
+
+        public async Task<IList<CarritoDto>> BuscarComprasXUsuario(int idUsuario)
+        {
+            var response = await _carritoRepository.BuscarComprasXUsuario(idUsuario);
+            return _mapper.Map<IList<CarritoDto>>(response);
         }
 
         public async Task<CarritoDto> CrearCarrito(CarritoFormDto entity)

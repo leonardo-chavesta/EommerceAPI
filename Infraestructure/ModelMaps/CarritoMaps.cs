@@ -13,6 +13,7 @@ namespace Infraestructure.ModelMaps
             builder.Property(x => x.Id).HasColumnName("ID");
             builder.Property(x => x.Nombre).HasColumnName("NOMBRE");
             builder.Property(x => x.Descripcion).HasColumnName("DESCRIPCION");
+            builder.Property(x => x.IdUsuario).HasColumnName("ID_USUARIO");
             builder.Property(x => x.Precio).HasColumnName("PRECIO");
             builder.Property(x => x.FechaRegistro).HasColumnName("FECHA_REGISTRO");
             builder.Property(x => x.Estado).HasColumnName("ESTADO");

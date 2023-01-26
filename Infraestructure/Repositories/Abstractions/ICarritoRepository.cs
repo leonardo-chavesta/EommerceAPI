@@ -1,9 +1,4 @@
 ﻿using Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infraestructure.Repositories.Abstractions
 {
@@ -12,6 +7,8 @@ namespace Infraestructure.Repositories.Abstractions
         Task<IList<Carrito>> ListarCarrito();
         Task<Carrito?> BucarProductosCarrito(int id);
         Task<Carrito> CrearCarrito(Carrito entity);
-        Task<Carrito?> EliminarProductoDelCarrito(int id); 
+        Task<Carrito?> EliminarProductoDelCarrito(int id);
+
+        Task<IList<Carrito?>> BuscarComprasXUsuario(int idUsuario);
     }
 }

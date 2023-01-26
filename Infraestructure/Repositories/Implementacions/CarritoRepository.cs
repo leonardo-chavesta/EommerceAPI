@@ -20,6 +20,14 @@ namespace Infraestructure.Repositories.Implementacions
             return response;
         }
 
+        public async Task<IList<Carrito?>> BuscarComprasXUsuario(int idUsuario)
+        {
+            var response = await _context.Carritos.
+                 Where(x => x.Estado == 1 && x.IdUsuario == idUsuario)
+                 .OrderByDescending(e => e.Id).ToListAsync();
+            return response!;
+        }
+
         public async Task<Carrito> CrearCarrito(Carrito entity)
         {
             _context.Add(entity);
